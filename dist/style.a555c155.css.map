@@ -1,0 +1,1 @@
+{"version":3,"sources":["sass\\style.scss"],"names":[],"mappings":"AAEA,KACI,qBAHY,CAIZ","file":"style.a555c155.css","sourceRoot":"..\\src","sourcesContent":["$primary-color: #000;\r\n\r\nbody {\r\n    background-color: $primary-color;\r\n    color: #fff;;\r\n}"]}
