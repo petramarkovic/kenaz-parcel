@@ -19,6 +19,7 @@
   },
   "homepage": "https://github.com/petramarkovic/kenaz-parcel#readme",
   "devDependencies": {
+    "axios": "^0.21.1",
     "parcel-bundler": "^1.12.4",
     "sass": "^1.32.5"
   }

@@ -223,6 +223,7 @@ $font-secondary: "Varela Round", sans-serif;
       font-family: $font-secondary;
       color: #eef6fa;
       font-size: 12px;
+      padding-top: 20px;
     }
   
     h1 {
@@ -231,11 +232,11 @@ $font-secondary: "Varela Round", sans-serif;
       font-size: 34px;
       font-weight: 700;
       line-height: 40.8px;
-      padding-bottom: 10px;
     }
   
     button {
       font-family: $font-secondary;
+      font-size: 14px;
       padding: 9px 20px;
       background: none;
       border: 1px solid #fff;
@@ -276,7 +277,7 @@ $font-secondary: "Varela Round", sans-serif;
         font-family: $font-primary;
         font-size: 24px;
         color: #363f48;
-        font-weight: bold;
+        font-weight: 700;
         width: 94px;
       }
   
@@ -418,6 +419,7 @@ $font-secondary: "Varela Round", sans-serif;
       font-size: 24px;
       font-family: $font-primary;
       padding: 15px 30px;
+      font-weight: 700;
     }
   }
   
@@ -571,6 +573,8 @@ $font-secondary: "Varela Round", sans-serif;
         font-size: 10px;
         position: relative;
         bottom: 30px;
+        margin-right: 20px;
+        margin-top: 30px;
       }
   
       h2 {
@@ -930,7 +934,7 @@ $font-secondary: "Varela Round", sans-serif;
     .carousel-images-row img {
       width: 80px;
       height: 80px;
-      margin-top: 90px;
+      margin-top: 50px;
     }
   
     footer {

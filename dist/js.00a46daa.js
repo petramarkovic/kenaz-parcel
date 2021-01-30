@@ -212,6 +212,139 @@ arrowRight.addEventListener('click', function () {
   slideRight();
 });
 startSlide();
+},{}],"js/news.js":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.getNews = getNews;
+
+function getNews() {
+  var generalNewsUrl = 'http://newsapi.org/v2/top-headlines?country=us&category=business&apiKey=3ab8892677804ed0bfdd40ef9adae2a0';
+  fetch(generalNewsUrl).then(function (res) {
+    return res.json();
+  }).then(function (data) {
+    var newsHeadings = document.querySelectorAll('.news-heading');
+    var newsImages = document.querySelectorAll('.news-image');
+    var newsDates = document.querySelectorAll('.news-date');
+    var newsAuthor = document.querySelectorAll('.news-author');
+    var newsDescription = document.querySelectorAll('.news-description');
+    console.log(data);
+
+    for (var i = 0; i < newsHeadings.length; i++) {
+      newsHeadings[i].innerHTML = data.articles[i].title;
+    }
+
+    for (var _i = 0; _i < newsImages.length; _i++) {
+      newsImages[_i].src = data.articles[_i].urlToImage;
+    }
+
+    for (var _i2 = 0; _i2 < newsDates.length; _i2++) {
+      newsDates[_i2].innerHTML = data.articles[_i2].publishedAt;
+    }
+
+    for (var _i3 = 0; _i3 < newsAuthor.length; _i3++) {
+      newsAuthor[_i3].innerHTML = data.articles[_i3].author;
+    }
+
+    for (var _i4 = 0; _i4 < newsDescription.length; _i4++) {
+      newsDescription[_i4].innerHTML = data.articles[_i4].content;
+    }
+  });
+}
+},{}],"js/business-news.js":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.getBusinessNews = getBusinessNews;
+
+function getBusinessNews() {
+  var businessUrl = 'https://newsapi.org/v2/top-headlines?country=de&category=business&apiKey=3ab8892677804ed0bfdd40ef9adae2a0';
+  fetch(businessUrl).then(function (res) {
+    return res.json();
+  }).then(function (data) {
+    var businessHeadings = document.querySelectorAll('.business-heading');
+    var businessImages = document.querySelectorAll('.business-image');
+    var businessDates = document.querySelectorAll('.business-date');
+    console.log(data);
+
+    for (var i = 0; i < businessHeadings.length; i++) {
+      businessHeadings[i].innerHTML = data.articles[i].title;
+    }
+
+    for (var _i = 0; _i < businessImages.length; _i++) {
+      businessImages[_i].src = data.articles[_i].urlToImage;
+    }
+
+    for (var _i2 = 0; _i2 < businessDates.length; _i2++) {
+      businessDates[_i2].innerHTML = data.articles[_i2].publishedAt;
+    }
+  });
+}
+},{}],"js/sport-news.js":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.getSportNews = getSportNews;
+
+function getSportNews() {
+  var sportUrl = 'https://newsapi.org/v2/top-headlines?country=us&category=sports&apiKey=3ab8892677804ed0bfdd40ef9adae2a0';
+  fetch(sportUrl).then(function (res) {
+    return res.json();
+  }).then(function (data) {
+    var sportHeadings = document.querySelectorAll('.sport-heading');
+    var sportImages = document.querySelectorAll('.sport-image');
+    var sportDates = document.querySelectorAll('.sport-date');
+    console.log(data);
+
+    for (var i = 0; i < sportHeadings.length; i++) {
+      sportHeadings[i].innerHTML = data.articles[i].title;
+    }
+
+    for (var _i = 0; _i < sportImages.length; _i++) {
+      sportImages[_i].src = data.articles[_i].urlToImage;
+    }
+
+    for (var _i2 = 0; _i2 < sportDates.length; _i2++) {
+      sportDates[_i2].innerHTML = data.articles[_i2].publishedAt;
+    }
+  });
+}
+},{}],"js/editorial-news.js":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.getEditorialNews = getEditorialNews;
+
+function getEditorialNews() {
+  var editorialUrl = 'https://newsapi.org/v2/top-headlines?country=us&apiKey=3ab8892677804ed0bfdd40ef9adae2a0';
+  fetch(editorialUrl).then(function (res) {
+    return res.json();
+  }).then(function (data) {
+    var editorialsHeadings = document.querySelectorAll('.editorial-heading');
+    var editorialsImages = document.querySelectorAll('.editorial-image');
+    var editorialsDates = document.querySelectorAll('.editorial-date');
+
+    for (var i = 0; i < editorialsHeadings.length; i++) {
+      editorialsHeadings[i].innerHTML = data.articles[i].title;
+    }
+
+    for (var _i = 0; _i < editorialsImages.length; _i++) {
+      editorialsImages[_i].src = data.articles[_i].urlToImage;
+    }
+
+    for (var _i2 = 0; _i2 < editorialsDates.length; _i2++) {
+      editorialsDates[_i2].innerHTML = data.articles[_i2].publishedAt;
+    }
+  });
+}
 },{}],"js/index.js":[function(require,module,exports) {
 "use strict";
 
@@ -220,7 +353,20 @@ var _search = require("./search");
 var _dropdownMenu = require("./dropdown-menu");
 
 var _slider = require("./slider");
-},{"./search":"js/search.js","./dropdown-menu":"js/dropdown-menu.js","./slider":"js/slider.js"}],"../node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
+
+var _news = require("./news");
+
+var _businessNews = require("./business-news");
+
+var _sportNews = require("./sport-news");
+
+var _editorialNews = require("./editorial-news");
+
+(0, _news.getNews)();
+(0, _businessNews.getBusinessNews)();
+(0, _sportNews.getSportNews)();
+(0, _editorialNews.getEditorialNews)();
+},{"./search":"js/search.js","./dropdown-menu":"js/dropdown-menu.js","./slider":"js/slider.js","./news":"js/news.js","./business-news":"js/business-news.js","./sport-news":"js/sport-news.js","./editorial-news":"js/editorial-news.js"}],"../node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 var OldModule = module.bundle.Module;
@@ -248,7 +394,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "60654" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "57918" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

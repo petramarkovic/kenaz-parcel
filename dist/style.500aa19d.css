@@ -205,6 +205,7 @@ nav a {
   font-family: "Varela Round", sans-serif;
   color: #eef6fa;
   font-size: 12px;
+  padding-top: 20px;
 }
 .slide-info h1 {
   font-family: "Bitter", serif;
@@ -212,10 +213,10 @@ nav a {
   font-size: 34px;
   font-weight: 700;
   line-height: 40.8px;
-  padding-bottom: 10px;
 }
 .slide-info button {
   font-family: "Varela Round", sans-serif;
+  font-size: 14px;
   padding: 9px 20px;
   background: none;
   border: 1px solid #fff;
@@ -255,7 +256,7 @@ main {
   font-family: "Bitter", serif;
   font-size: 24px;
   color: #363f48;
-  font-weight: bold;
+  font-weight: 700;
   width: 94px;
 }
 .news-container .news-header a {
@@ -377,6 +378,7 @@ main {
   font-size: 24px;
   font-family: "Bitter", serif;
   padding: 15px 30px;
+  font-weight: 700;
 }
 
 .arrow-right-yellow {
@@ -519,6 +521,8 @@ aside .aside-box span {
   font-size: 10px;
   position: relative;
   bottom: 30px;
+  margin-right: 20px;
+  margin-top: 30px;
 }
 aside .aside-box h2 {
   font-family: "Bitter", serif;
@@ -851,7 +855,7 @@ footer {
   .carousel-images-row img {
     width: 80px;
     height: 80px;
-    margin-top: 90px;
+    margin-top: 50px;
   }
 
   footer {
