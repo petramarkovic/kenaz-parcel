@@ -583,6 +583,11 @@ aside .banner-group .banner-xs p {
   position: absolute;
   z-index: -1;
 }
+.carousel2 .carousel-container .carousel-2-slide {
+  object-fit: cover;
+  background-size: cover;
+  width: auto;
+}
 .carousel2 .carousel-arrows {
   margin: 30px;
   display: flex;
@@ -632,7 +637,7 @@ footer {
   align-items: center;
   color: #45b0e3;
   font-family: "Bitter", serif;
-  font-size: 11px;
+  font-size: 29.62px;
   font-weight: 400;
   font-style: normal;
   padding-bottom: 21px;
@@ -906,6 +911,11 @@ footer {
     width: auto;
   }
 
+  .slide-content .news-image {
+    width: 100%;
+    object-fit: cover;
+  }
+
   .slide-info {
     bottom: 0;
   }
@@ -969,6 +979,7 @@ footer {
   .news-carousel-container {
     width: auto;
     height: auto;
+    margin-right: 0;
   }
 
   .news-carousel-container-box {

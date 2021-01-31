@@ -192,20 +192,32 @@
                 <div class="news-carousel-header">
                     <h2>News Carousel</h2>
                     <div>
-                        <img class="arrow-left-yellow arrow-left-news" src="../src/images/arrow-left-yellow.png" alt="arrow left">
-                        <img class="arrow-right-yellow arrow-right-news" src="../src/images/arrow-right-yellow.png" alt="arrow right">
+                        <img role="button" class="arrow-left-yellow arrow-left-news" src="../src/images/arrow-left-yellow.png" alt="arrow left">
+                        <img role="button" class="arrow-right-yellow arrow-right-news" src="../src/images/arrow-right-yellow.png" alt="arrow right">
                     </div>
                 </div>
-                <div class="news-carousel-container-box">
+                <div class="news-carousel-container-box news-carousel-box-1">
                     <div class="news-carousel-box">
                         <img class="news-box-image news-image" src="" alt="news image">
-                        <p class="date news-date"></p>
-                        <h3 class="news-heading"></h3>
+                        <p class="date editorial-date"></p>
+                        <h3 class="editorial-heading"></h3>
                     </div>
                     <div class="news-carousel-box">
-                        <img class="news-box-image news-image" src="" alt="news image">
-                        <p class="date news-date"></p>
-                        <h3 class="news-heading"></h3>
+                        <img class="news-box-image editorial-image" src="" alt="news image">
+                        <p class="date editorial-date"></p>
+                        <h3 class="editorial-heading"></h3>
+                    </div>
+                </div>
+                <div class="news-carousel-container-box news-carousel-box-1">
+                    <div class="news-carousel-box">
+                        <img class="news-box-image editorial-image" src="" alt="news image">
+                        <p class="date editorial-date"></p>
+                        <h3 class="editorial-heading"></h3>
+                    </div>
+                    <div class="news-carousel-box">
+                        <img class="news-box-image editorial-image" src="" alt="news image">
+                        <p class="date editorial-date"></p>
+                        <h3 class="editorial-heading"></h3>
                     </div>
                 </div>
             </div>
@@ -215,9 +227,14 @@
                     <div class="editorials-header">
                         <h2>Editorials</h2>
                         <div>
-                            <img class="arrow-left-brown arrow-left-news" src="../src/images/arrow-left-brown.png" alt="arrow left">
-                            <img class="arrow-right-brown arrow-right-news" src="../src/images/arrow-right-brown.png" alt="arrow right">
+                            <img class="arrow-left-brown arrow-left-news arrow-left-editorial" src="../src/images/arrow-left-brown.png" alt="arrow left">
+                            <img class="arrow-right-brown arrow-right-news arrow-right-editorial" src="../src/images/arrow-right-brown.png" alt="arrow right">
                         </div>
+                    </div>
+                    <div class="editorial-box news-slide editorial-slide">
+                        <img class="news-box-image editorial-image" src="" alt="news image">
+                        <p class="date editorial-date"></p>
+                        <h3 class="editorial-heading"></h3>
                     </div>
                     <div class="editorial-box news-slide editorial-slide">
                         <img class="news-box-image editorial-image" src="" alt="news image">
@@ -230,9 +247,14 @@
                     <div class="local-header">
                         <h2>Local News</h2>
                         <div>
-                            <img class="arrow-left-brown arrow-left-news" src="../src/images/arrow-left-brown.png" alt="arrow left">
-                            <img class="arrow-right-news" src="../src/images/arrow-right-brown.png" alt="arrow right">
+                            <img class="arrow-left-brown arrow-left-news arrow-left-local" src="../src/images/arrow-left-brown.png" alt="arrow left">
+                            <img class="arrow-right-news arrow-right-local" src="../src/images/arrow-right-brown.png" alt="arrow right">
                         </div>
+                    </div>
+                    <div class="local-box">
+                        <img class="news-box-image local-image editorial-image" src="" alt="news image">
+                        <p class="date local-date editorial-date"></p>
+                        <h3 class="local-heading editorial-heading"></h3>
                     </div>
                     <div class="local-box">
                         <img class="news-box-image local-image editorial-image" src="" alt="news image">
@@ -316,11 +338,18 @@
 
     <div class="carousel2">
         <div class="carousel-container">
-            <img class="carousel-background" src="../src/images/carousel2-background.png" alt="news image">
+            <img class="carousel-background carousel-2-slide" src="../src/images/carousel2-background.png" alt="news image">
+            <img class="carousel-background carousel-2-slide" src="../src/images/img1.png" alt="news image">
+            <img class="carousel-background carousel-2-slide" src="../src/images/img2.png" alt="news image">
+            <img class="carousel-background carousel-2-slide" src="../src/images/img3.png" alt="news image">
+            <img class="carousel-background carousel-2-slide" src="../src/images/img4.png" alt="news image">
+            <img class="carousel-background carousel-2-slide" src="../src/images/img5.png" alt="news image">
+            <img class="carousel-background carousel-2-slide" src="../src/images/img6.png" alt="news image">
+            <img class="carousel-background carousel-2-slide" src="../src/images/img7.png" alt="news image">
             <div class="carousel-arrows">
-                <img src="../src/images/carousel-left.png" alt="arrow left" height="50">
+                <img id="carousel-2-arrow-left" src="../src/images/carousel-left.png" alt="arrow left" height="50">
                 <img src="../src/images/carousel-search.png" alt="search icon">
-                <img src="../src/images/carousel-right.png" alt="arrow right" height="50">
+                <img id="carousel-2-arrow-right" src="../src/images/carousel-right.png" alt="arrow right" height="50">
             </div>
             <div class="carousel-images-row">
                 <img src="../src/images/img1.png" alt="news image">

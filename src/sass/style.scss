@@ -643,6 +643,11 @@ $font-secondary: "Varela Round", sans-serif;
         position: absolute;
         z-index: -1;
       }
+      .carousel-2-slide {
+        object-fit: cover;
+        background-size: cover;
+        width: auto;
+      }
     }
   
     .carousel-arrows {
@@ -696,7 +701,7 @@ $font-secondary: "Varela Round", sans-serif;
     align-items: center;
     color: #45b0e3;
     font-family: $font-primary;
-    font-size: 11px;
+    font-size: 29.62px;
     font-weight: 400;
     font-style: normal;
     padding-bottom: 21px;
@@ -985,6 +990,11 @@ $font-secondary: "Varela Round", sans-serif;
     main {
       width: auto;
     }
+
+    .slide-content .news-image {
+      width: 100%;
+      object-fit: cover;
+    }
   
     .slide-info {
       bottom: 0;
@@ -1059,6 +1069,7 @@ $font-secondary: "Varela Round", sans-serif;
     .news-carousel-container {
       width: auto;
       height: auto;
+      margin-right: 0;
     }
   
     .news-carousel-container-box {
