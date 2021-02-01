@@ -7,7 +7,7 @@
 }
 
 .carousel2 .carousel-container {
-  background-image: url(/carousel2-background.31d2877a.png);
+  background-image: url(/carousel2-img1.5f7dcc4b.jpg);
   background-size: cover;
   object-fit: cover;
 }
@@ -243,10 +243,6 @@
   .comment img {
     width: 100px;
     margin: 10px auto;
-  }
-
-  .carousel-images-row {
-    margin-top: 100px;
   }
 }
 

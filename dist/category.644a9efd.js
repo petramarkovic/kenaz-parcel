@@ -212,6 +212,61 @@ arrowRight.addEventListener('click', function () {
   slideRight();
 });
 startSlide();
+},{}],"js/thumbnail-slider.js":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.resetCarousel = resetCarousel;
+exports.startCarouselSlide = startCarouselSlide;
+exports.slideLeftCarousel = slideLeftCarousel;
+exports.slideRightCarousel = slideRightCarousel;
+var carouselSlides = document.querySelectorAll('.carousel-2-slide');
+var arrowRight = document.getElementById('carousel-2-arrow-right');
+var arrowLeft = document.getElementById('carousel-2-arrow-left');
+var currentSlide = 0;
+
+function resetCarousel() {
+  var i;
+
+  for (i = 0; i < carouselSlides.length; i++) {
+    carouselSlides[i].style.display = 'none';
+  }
+}
+
+function startCarouselSlide() {
+  resetCarousel();
+  carouselSlides[0].style.display = 'block';
+}
+
+function slideLeftCarousel() {
+  resetCarousel();
+  carouselSlides[currentSlide - 1].style.display = 'block';
+  currentSlide--;
+}
+
+function slideRightCarousel() {
+  resetCarousel();
+  carouselSlides[currentSlide + 1].style.display = 'block';
+  currentSlide++;
+}
+
+arrowLeft.addEventListener('click', function () {
+  if (currentSlide === 0) {
+    currentSlide = carouselSlides.length;
+  }
+
+  slideLeftCarousel();
+});
+arrowRight.addEventListener('click', function () {
+  if (currentSlide === carouselSlides.length - 1) {
+    currentSlide = -1;
+  }
+
+  slideRightCarousel();
+});
+startCarouselSlide();
 },{}],"js/news.js":[function(require,module,exports) {
 "use strict";
 
@@ -262,10 +317,12 @@ var _dropdownMenu = require("./dropdown-menu");
 
 var _slider = require("./slider");
 
+var _thumbnailSlider = require("./thumbnail-slider");
+
 var _news = require("./news");
 
 (0, _news.getNews)();
-},{"./search":"js/search.js","./dropdown-menu":"js/dropdown-menu.js","./slider":"js/slider.js","./news":"js/news.js"}],"../node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
+},{"./search":"js/search.js","./dropdown-menu":"js/dropdown-menu.js","./slider":"js/slider.js","./thumbnail-slider":"js/thumbnail-slider.js","./news":"js/news.js"}],"../node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 var OldModule = module.bundle.Module;
@@ -293,7 +350,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "57391" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "56332" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

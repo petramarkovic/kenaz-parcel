@@ -644,9 +644,11 @@ $font-secondary: "Varela Round", sans-serif;
         z-index: -1;
       }
       .carousel-2-slide {
+        width: 940px;
+        height: 400px;
         object-fit: cover;
         background-size: cover;
-        width: auto;
+        background-position: center;
       }
     }
   
@@ -662,6 +664,13 @@ $font-secondary: "Varela Round", sans-serif;
   .carousel-images-row {
     text-align: center;
     margin-top: 150px;
+
+    .images-row-img {
+      width: 120px;
+      height: 120px;
+      object-fit: cover;
+      background-size: cover;
+    }
   }
   
   footer {
@@ -926,8 +935,8 @@ $font-secondary: "Varela Round", sans-serif;
       width: auto;
       margin: 18px 0 19px 0;
   
-      .carousel-background {
-        width: auto;
+      .carousel-2-slide {
+        width: 100%;
       }
     }
   
@@ -936,10 +945,10 @@ $font-secondary: "Varela Round", sans-serif;
       top: 100px;
     }
   
-    .carousel-images-row img {
-      width: 80px;
-      height: 80px;
-      margin-top: 50px;
+    .images-row-img {
+      width: 70px;
+      height: 70px;
+      margin-top: 10px;
     }
   
     footer {
@@ -1129,7 +1138,7 @@ $font-secondary: "Varela Round", sans-serif;
     .carousel-images-row {
       margin-top: 150px;
   
-      img {
+      .images-row-img {
         width: 60px;
         height: 60px;
       }

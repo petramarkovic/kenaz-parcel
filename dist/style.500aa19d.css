@@ -584,9 +584,11 @@ aside .banner-group .banner-xs p {
   z-index: -1;
 }
 .carousel2 .carousel-container .carousel-2-slide {
+  width: 940px;
+  height: 400px;
   object-fit: cover;
   background-size: cover;
-  width: auto;
+  background-position: center;
 }
 .carousel2 .carousel-arrows {
   margin: 30px;
@@ -599,6 +601,12 @@ aside .banner-group .banner-xs p {
 .carousel-images-row {
   text-align: center;
   margin-top: 150px;
+}
+.carousel-images-row .images-row-img {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  background-size: cover;
 }
 
 footer {
@@ -848,8 +856,8 @@ footer {
     width: auto;
     margin: 18px 0 19px 0;
   }
-  .carousel2 .carousel-container .carousel-background {
-    width: auto;
+  .carousel2 .carousel-container .carousel-2-slide {
+    width: 100%;
   }
 
   .carousel-arrows {
@@ -857,10 +865,10 @@ footer {
     top: 100px;
   }
 
-  .carousel-images-row img {
-    width: 80px;
-    height: 80px;
-    margin-top: 50px;
+  .images-row-img {
+    width: 70px;
+    height: 70px;
+    margin-top: 10px;
   }
 
   footer {
@@ -1038,7 +1046,7 @@ footer {
   .carousel-images-row {
     margin-top: 150px;
   }
-  .carousel-images-row img {
+  .carousel-images-row .images-row-img {
     width: 60px;
     height: 60px;
   }
