@@ -9,7 +9,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/petramarkovic/kenaz-parcel.git"
+    "url": "https://github.com/petramarkovic/kenaz-parcel.git"
   },
   "keywords": [],
   "author": "",
@@ -17,7 +17,7 @@
   "bugs": {
     "url": "https://github.com/petramarkovic/kenaz-parcel/issues"
   },
-  "homepage": "https://github.com/petramarkovic/kenaz-parcel#readme",
+  "homepage": "https://petramarkovic.github.io/kenaz-parcel/",
   "devDependencies": {
     "axios": "^0.21.1",
     "parcel-bundler": "^1.12.4",
