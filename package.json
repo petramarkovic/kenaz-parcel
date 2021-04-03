@@ -17,7 +17,7 @@
   "bugs": {
     "url": "https://github.com/petramarkovic/kenaz-parcel/issues"
   },
-  "homepage": "src/index.html",
+  "homepage": "https://petramarkovic.github.io/kenaz-parcel/",
   "devDependencies": {
     "axios": "^0.21.1",
     "parcel-bundler": "^1.12.4",
